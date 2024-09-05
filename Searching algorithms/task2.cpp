@@ -1,41 +1,41 @@
-#include <cmath>
-#include <cstdio>
-#include <vector>
 #include <iostream>
+#include <vector>
 #include <algorithm>
+
 using namespace std;
 
-
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
-    int s=0;
-    cin>>s;
+    // Read the number of students and the number of queries
+    int s = 0;
+    cin >> s;
     
-    int intervals=0;
-    cin>>intervals;
+    int intervals = 0;
+    cin >> intervals;
     
-    vector<int> arr;
-    for(int i=0;i<s;i++){
-        int n;
-        cin>>n;
-        arr.push_back(n);
+    // Read the scores into a vector
+    vector<int> arr(s);
+    for(int i = 0; i < s; i++) {
+        cin >> arr[i];
     }
     
-    sort(arr.begin(),arr.end());
+    // Sort the array of scores
+    sort(arr.begin(), arr.end());
     
-    for(int i=0;i<intervals;i++){
-    int low=0,upper=0;
-    cin>>low>>upper;
-    
-    auto id1 = lower_bound(arr.begin(), arr.end(), low);
-    auto id2 = upper_bound(arr.begin(), arr.end(), upper);
+    // Process each query
+    for(int i = 0; i < intervals; i++) {
+        int low = 0, upper = 0;
+        cin >> low >> upper;
         
-        if(low>upper){
-          cout<<0<<endl;
-        }else{
-          cout<<  ((id2-arr.begin())-(id1-arr.begin()))<<endl;
+        // Find the lower and upper bounds in the sorted array
+        auto id1 = lower_bound(arr.begin(), arr.end(), low);
+        auto id2 = upper_bound(arr.begin(), arr.end(), upper);
+        
+        // Calculate the number of elements within the interval [low, upper]
+        if (low > upper) {
+            cout << 0 << endl;
+        } else {
+            cout << (id2 - id1) << endl;
         }
-        
     }
     
     return 0;
