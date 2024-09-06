@@ -25,9 +25,8 @@ SinglyLinkedListNode* mergeLists(SinglyLinkedListNode* headA, SinglyLinkedListNo
 - Return a reference to the head of the merged list.
 
 ### Constraints
-
-- \( 1 \leq n, m \leq 1000 \)
-- Elements in each list are integers in the range \( -10^4 \leq a_i \leq 10^4 \).
+- `1 ≤ n, m ≤ 1000`
+- `-10^4 ≤ a_i ≤ 10^4`
 
 ### Sample Input
 ```
