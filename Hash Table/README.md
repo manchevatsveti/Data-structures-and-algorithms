@@ -11,7 +11,7 @@ You are given two strings: `s1` and `s2`. Both strings contain only lowercase La
 - Output a single number: the count of occurrences of `s1` in `s2`.
 
 ### Constraints
-- \( 1 \leq |s1|, |s2| \leq 10^6 \)
+- \( 1 ≤ |s1|, |s2| ≤ 10^6 \)
 - Both `s1` and `s2` contain only lowercase Latin letters.
 
 ### Example
@@ -44,7 +44,7 @@ You are given two strings that consist of only lowercase Latin letters. Find the
 - Output a single number: the length of the longest common sequence.
 
 ### Constraints
-- \( 1 \leq |s1|, |s2| \leq 1000 \)
+- \( 1 ≤ |s1|, |s2| ≤ 1000 \)
 - Both strings contain only lowercase Latin letters.
 
 ### Example
@@ -79,7 +79,7 @@ As a programmer, you decide to write a program to find the minimum distance betw
 - Output a single number: the minimum distance between two grandmas interested in the same topic.
 
 ### Constraints
-- \( 1 \leq N \leq 10^5 \)
+- \( 1 ≤ N ≤ 10^5 \)
 - Topics are integers between 1 and \( 10^9 \).
 - If no two grandmas share the same topic, output `INT_MAX`.
 
