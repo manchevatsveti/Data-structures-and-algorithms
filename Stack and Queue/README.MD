@@ -12,7 +12,7 @@ A group of warriors is walking on a narrow, long bridge. If two groups of warrio
 - Output the strengths of the warriors who successfully cross the bridge, in the order they do so. If no warrior crosses, output an empty line.
 
 ### Constraints
-- \( |S_i| \leq 10^9 \) (absolute strength values are within this range).
+- `|S_i|  ≤ 10^9` (absolute strength values are within this range).
 
 ### Sample Input 0
 ```
@@ -80,8 +80,8 @@ You are a construction entrepreneur aiming to build the largest possible residen
 - Output a single integer — the area of the largest possible rectangle that can be built.
 
 ### Constraints
-- \( 1 \leq N \leq 100,000 \)
-- \( 1 \leq D_i \leq 10^9 \)
+- `1 ≤ N ≤ 10^5`
+- `1 ≤ D ≤ 10^5`
 
 ### Sample Input 0
 ```
@@ -109,8 +109,8 @@ At the university, this year's competition is the "Hunger Games." The rules are 
 - Output a single integer — the number of days until no more eliminations can occur.
 
 ### Constraints
-- \( 1 \leq N \leq 100,000 \)
-- \( 1 \leq H_i \leq 10^9 \)
+- `1 ≤ N ≤ 10^5`
+- `1 ≤ H_i ≤ 10^9`
 
 ### Sample Input 0
 ```
