@@ -3,23 +3,62 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
-#include <unordered_map>
+#include <bits/stdc++.h>
 using namespace std;
 
+
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
-    string s1,s2;
-    cin>>s1>>s2;
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int n;
+    cin>>n;
     
-    size_t count =0;
-    size_t size2 = s2.size();
+    deque<long long> pos;
+    deque<long long> neg;
+    long long x;
     
-    size_t id = s2.find(s1);
-    
-    while(id<size2){
-        count++;
-        id=s2.find(s1,id+1);
+    bool passed=false;
+    for(int i=0;i<n;i++){
+        cin>>x;
+        
+        if(x>0){
+            if(!neg.empty()){
+                while(!neg.empty()){
+                    cout<<neg.front()<<" ";
+                    neg.pop_front();
+                    passed=true;
+                }
+            }
+            pos.push_back(x);
+        }else if(x<0){
+            neg.push_back(x);
+            
+            while(!neg.empty()&&!pos.empty()){
+                if(abs(neg.front())>pos.back()){
+                    pos.pop_back();
+                }else if(abs(neg.front())<pos.back()){
+                    neg.pop_front();
+                }else if(abs(neg.front())==pos.back()){
+                    pos.pop_back();
+                    neg.pop_front();
+                }
+            }
+        }
     }
-    cout<<count;
+    
+        while(!pos.empty()){
+            cout<<pos.front()<<" ";
+            pos.pop_front();
+            passed=true;
+        }
+        while(!neg.empty()){
+            cout<<neg.front()<<" ";
+            neg.pop_front();
+            passed=true;
+        }
+    
+    if(!passed){
+        cout<<"\n";
+    }
+    
     return 0;
 }
