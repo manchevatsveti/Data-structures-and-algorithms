@@ -14,8 +14,8 @@ Given an array of distinct integers from 1 to \( N \), and a number \( B \), det
 - Print a single integer: the number of odd-length subarrays where \( B \) is the median.
 
 ### Constraints
-- \( 1 \leq N \leq 100,000 \)
-- \( 1 \leq B \leq N \)
+- `1 ≤ N ≤ 10^5`
+- `1 ≤ B ≤ N`
 - All elements in the array are distinct.
 
 ### Sample Input 0
@@ -49,16 +49,16 @@ You are given a subsequence of a permutation of the integers from 1 to \( N \). 
 
 ### Input Format
 - The first line contains two integers \( N \) and \( M \) where:
-  - \( N \) is the maximum integer in the permutation (1 ≤ \( N \leq 10^5 \)).
-  - \( M \) is the length of the subsequence (1 ≤ \( M \leq N \)).
+  - \( N \) is the maximum integer in the permutation `1 ≤ N ≤ 10^5`.
+  - \( M \) is the length of the subsequence `1 ≤ M ≤ N`.
 - The next \( M \) lines each contain one integer from the subsequence.
 
 ### Output Format
 - Print the lexicographically smallest permutation that contains the given subsequence, separated by spaces.
 
 ### Constraints
-- \( 1 \leq N \leq 100,000 \)
-- \( 1 \leq M \leq N \)
+- `1 ≤ N ≤ 10^5`
+- `1 ≤ M ≤ N`
 - All elements in the subsequence are distinct.
 
 ### Sample Input 0
@@ -83,15 +83,15 @@ You are given a set of numbers that initially contains only one element: 0. You 
 
 ### Input Format
 - The first line contains an integer \( Q \) where:
-  - \( Q \) is the number of queries (1 ≤ \( Q \leq 100,000 \)).
+  - \( Q \) is the number of queries `1 ≤ Q ≤ 10^5`.
 - The next \( Q \) lines each contain an integer \( x \) representing a number to be added to the set (0 ≤ \( x \leq 10^9 \)).
 
 ### Output Format
 - For each query, print the minimum XOR value between any two distinct elements in the set after the number is added.
 
 ### Constraints
-- \( 1 \leq Q \leq 100,000 \)
-- \( 0 \leq x \leq 10^9 \)
+- `1 ≤ Q ≤ 10^5`
+- `0 ≤ x ≤ 10^9`
 - The set contains no duplicate elements.
 
 ### Sample Input 0
