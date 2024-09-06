@@ -8,7 +8,7 @@ This repository contains solutions to various tasks from the Data Structures and
 - **[Sorting Algorithms](./Sorting%20algorithms)**
 - **[Searching Algorithms](./Searching%20algorithms)**
 - **[Linked List](./Linked%20list)**
-- **[Stack and Queue](./stack_and_queue)**
+- **[Stack and Queue](./Stack%20and%20Queue)**
 - **[Binary Search Tree](./Binary%20Search%20Tree)**
 - **[Balanced Binary Tree - AVL](./Balanced%20Binary%20Tree.%20AVL.)**
 - **[Heap](./Heap)**
