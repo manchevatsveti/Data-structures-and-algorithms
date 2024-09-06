@@ -1,5 +1,4 @@
 
----
 ## Task 1: Count Occurrences of `s1` in `s2`
 
 ### Problem Description
